@@ -1,5 +1,5 @@
 pipeline {
-            agent {label 'iaw'}
+            agent any
                 stages {
                         stage('Downloading configuration files') {
                             steps {
