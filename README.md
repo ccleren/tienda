@@ -1,13 +1,13 @@
 # PRÁCTICA JENKINS
 
 Este repositorio cuenta con dos carpetas:
-  - PHP: en la que se encuentran todos los ficheros PHP + HTLM que va a tener el contenedor desplegado
+  - PHP: en la que se encuentran todos los ficheros PHP + HTLM que va a tener el contenedor desplegado.
   - scripts: que contiene el fichero SQL con las tablas que se van a insertar en la base de datos iaw_db.
 
 El fichero docker-compose contiene tres imágenes:
-  - Apache: permite puerto 8085.
+  - Apache: permite puerto 8085 (una vez desplegado podemos acceder a través de http://localhost:8085).
   - MySQL: puerto 3306.
-  - phpMyAdmin: puerto 8081.
+  - phpMyAdmin: puerto 8081 (una vez desplegado podemos acceder a través de http://localhost:8081).
 
 Y un fichero llamado Jenkins-pipeline.txt que realiza las siguientes etapas:
   1. Descarga el repositorio con git clone.
