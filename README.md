@@ -1,13 +1,23 @@
-# Pipeline Jenkins para aplicación PHP Dockerizada
+# 🚀 Pipeline Jenkins para aplicación PHP Dockerizada
 
-Proyecto DevOps para desplegar una aplicación PHP usando Docker Compose, Apache, MySQL y phpMyAdmin, automatizando el proceso mediante un pipeline de Jenkins.
+Proyecto DevOps para desplegar una aplicación PHP usando **Docker Compose**, **Apache**, **MySQL** y **phpMyAdmin**, automatizando el proceso mediante un pipeline de **Jenkins**.
 
-## Objetivo
+---
+
+## 🎯 Objetivo
 
 El objetivo del proyecto es practicar un flujo básico de integración y despliegue usando contenedores.
-El pipeline se encarga de clonar el repositorio, levantar los servicios, copiar los archivos de la aplicación, cargar la base de datos y ejecutar la gestión de dependencias.
+El pipeline se encarga de:
 
-## Arquitectura
+- Clonar el repositorio desde GitHub.
+- Levantar los servicios con Docker Compose.
+- Copiar los archivos de la aplicación PHP.
+- Cargar la base de datos.
+- Ejecutar Composer para gestionar dependencias.
+
+---
+
+## 🏗️ Arquitectura
 
 ```text
 Jenkins
@@ -19,7 +29,9 @@ Docker Compose
    └── phpMyAdmin
 ```
 
-## Tecnologías utilizadas
+---
+
+## 🛠️ Tecnologías usadas
 
 - Jenkins
 - Docker
@@ -31,7 +43,9 @@ Docker Compose
 - Composer
 - GitHub
 
-## Estructura del proyecto
+---
+
+## 📁 Estructura del proyecto
 
 ```text
 .
@@ -45,7 +59,9 @@ Docker Compose
 └── README.md
 ```
 
-## Servicios desplegados
+---
+
+## 🌐 Servicios desplegados
 
 | Servicio | Descripción | Puerto |
 |---|---|---|
@@ -53,7 +69,9 @@ Docker Compose
 | MySQL | Base de datos relacional | 3306 |
 | phpMyAdmin | Interfaz web para administrar MySQL | 8081 |
 
-## Ejecución local
+---
+
+## ⚙️ Instalación y ejecución
 
 Para levantar el entorno:
 
@@ -80,16 +98,21 @@ Para detener el entorno:
 docker compose down
 ```
 
-## Pipeline Jenkins
+---
+
+## 🔁 Pipeline Jenkins
 
 El pipeline realiza las siguientes fases:
+
 1. Clona el repositorio desde GitHub.
 2. Despliega los contenedores con Docker Compose.
 3. Copia los archivos PHP al volumen usado por Apache.
 4. Carga las tablas SQL en la base de datos.
 5. Ejecuta Composer para gestionar dependencias.
 
-## Qué demuestra este proyecto
+---
+
+## ✅ Qué demuestra este proyecto
 
 - Uso de Docker Compose para desplegar varios servicios.
 - Automatización de despliegue con Jenkins.
@@ -97,9 +120,15 @@ El pipeline realiza las siguientes fases:
 - Inicialización de base de datos mediante scripts SQL.
 - Flujo básico DevOps para una aplicación PHP.
 
-## Próximas mejoras
+---
+
+## 📌 Próximas mejoras
 
 - Añadir variables de entorno con `.env`.
+- Separar entornos de desarrollo y producción.
+- Añadir healthchecks a los contenedores.
+- Añadir pruebas automáticas en Jenkins.
+- Añadir capturas del despliegue.
 - Separar entornos de desarrollo y producción.
 - Añadir healthchecks a los contenedores.
 - Añadir pruebas automáticas en Jenkins.
